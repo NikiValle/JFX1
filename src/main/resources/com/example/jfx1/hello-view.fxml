@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="452.0" prefWidth="601.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.jfx1.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label alignment="TOP_LEFT" centerShape="false" contentDisplay="CENTER" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="158.0" prefWidth="514.0" text="Scegli un'opzione:&#10;1_aggiungere un giocatore alla squadra, controllando che non ci sia più di un capitano&#10;2_visualizzare tutti i giocatori della squadra&#10;3_modificare i dati di un giocatore a scelta&#10;4_cancellare un giocatore dalla squadra &#10;5_visualizzare i giocatori che hanno realizzato più di 5 goal.&#10;6_visualizzare il nome del capitano&#10;7_assegnare il ruolo di capitano in modo casuale se non ancora presente" />
+   <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="70.0" prefWidth="371.0">
+      <children>
+         <Button fx:id="b1" mnemonicParsing="false" text="1" />
+         <Button fx:id="b2" mnemonicParsing="false" text="2" />
+         <Button fx:id="b3" mnemonicParsing="false" text="3" />
+         <Button fx:id="b4" mnemonicParsing="false" text="4" />
+         <Button fx:id="b5" mnemonicParsing="false" text="5" />
+         <Button fx:id="b6" mnemonicParsing="false" text="6" />
+         <Button fx:id="b7" mnemonicParsing="false" text="7" />
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="67.0" prefWidth="561.0">
+      <children>
+         <TextField fx:id="nInput" />
+         <TextField fx:id="gInput" />
+         <CheckBox fx:id="cCheck" mnemonicParsing="false" text="CheckBox" />
+      </children>
+   </HBox>
+   <TextField fx:id="output" prefHeight="128.0" prefWidth="561.0" />
+</VBox>
